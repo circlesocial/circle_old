@@ -1,0 +1,93 @@
+.title{
+    position: absolute;
+    width: 100%;
+    height: 22px;
+
+    margin-top: 22px;
+    font-family: 'Lato Regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.login_form_item{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    height: 37px;
+}
+
+.keywords_for_event_search {
+  padding-left: 6px !important;
+  text-align: left !important;
+}
+
+ion-item{
+    margin-left: 10px;
+    margin-right: 25px;
+    /*border-color: #D8D8D8;*/
+}
+
+.segment{
+    margin-top: 8px;
+    margin-left: 78px;
+}
+
+.chatroom{
+    height: 70px;
+}
+
+ion-segment{
+    width: 120px;
+    margin-top: 18px;
+
+    font-family: "Lato Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+ion-segment-button{
+    border: 0px solid #CDCCCC;
+    border-radius:  0px;
+
+    color: #353535;
+}
+
+
+ion-thumbnail{
+    height: 50px;
+    width: 50px;
+}
+
+.chatroom_time{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+
+    font-family: "Lato Regular";
+    font-style: normal;
+    font-size: 12px;
+    color: #767676;
+}
+
+ion-content {
+
+  /*position: absolute;*/
+  /*top: 75px;*/
+
+  height: 88%;
+  
+}
+
+.chatroom_icon{
+    border-radius: 3px;
+}

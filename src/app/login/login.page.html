@@ -1,0 +1,56 @@
+<ion-content no-padding no-bounce>
+    <div class="logo">
+    </div>
+
+
+    <div class="welcome">
+      Welcome back
+    </div>
+    
+    <div class="welcome_message">
+      Please log in and enjoy your meet-ups
+    </div>
+
+    <div input-field class="animated fadeInDown input-box">
+      <ion-item no-padding class="login_form_item">
+        <ion-img class="login_form_img_1" src="/assets/email.svg"></ion-img>
+        <ion-input class="user_info" #usr type="email" placeholder="email"></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-img class="login_form_img_2" src="/assets/password.svg"></ion-img>
+        <ion-input class="user_info" #pswd type="password" placeholder="password"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="bt">
+        <ion-button color="favorite" class="login_button" (click)="login(usr.value, pswd.value)" >Log in</ion-button>
+    </div>
+
+    <div class="or">
+      or
+    </div>
+
+    <div class="bt">
+        <ion-button color="loginfacebook" class="facebook_button" (click)="login(usr.value, pswd.value)" fill="outline" >
+          <ion-img class="facebook_icon" src="/assets/facebook.svg">
+          </ion-img>
+          Log in with facebook
+        </ion-button>
+    </div>
+
+
+    <div class="bt footer_buttons">
+      <span class="forget_password" (click)=jumpToTab1()>
+        Forget password?
+      </span>
+      <span class="register" (click)=switchLoginRegister()>
+        Register Now!
+      </span>
+    </div>
+  
+  </ion-content>
+  
+  
+  
+  
+  

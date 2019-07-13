@@ -1,0 +1,57 @@
+<div>
+  <ion-img class="return" src="/assets/return.svg" (click)="back_to_previous()"></ion-img>
+  <ion-img class="favor" (click)="favor_event()" src="/assets/favor.svg"></ion-img>
+  <ion-img class="share" (click)="share_event()" src="/assets/share.svg"></ion-img>
+</div>
+
+<ion-content>
+    <ion-img class="event-img" src="/assets/dinner.png"></ion-img>
+    <ion-card-title>Dinner at Hyde Park</ion-card-title>
+    <ion-card-content class="event-description">
+      Come and join us for a wonderful dinner with uchicago students and alumni. Games and movies provided! Come and join us for a wonderful dinner with uchicago students and alumni. Games and movies provided!
+    </ion-card-content>
+
+    <ion-card-content  class="content_entry" lines="none">
+      <ion-img class="content_entry_icon" src="/assets/people_going.svg"></ion-img>
+      <ion-label lines="none" class="content_entry_text"> 10 going</ion-label>
+    </ion-card-content>
+
+    <ion-card-content  class="content_entry" lines="none">
+      <ion-img class="content_entry_icon" src="/assets/fire_grey.svg"></ion-img>
+      <ion-label lines="none" class="content_entry_text"> 3 spots left</ion-label>
+    </ion-card-content>
+
+    <ion-card-content  class="content_entry" lines="none">
+      <ion-img class="content_entry_icon" src="/assets/tags.svg"></ion-img>
+      <ion-label lines="none" class="content_entry_text"> Tags</ion-label>
+    </ion-card-content>
+      <ion-item class="tag-list" id="tag-list" lines="none">
+        <ion-badge color="light-favorite">Food</ion-badge>
+        <ion-badge color="light-favorite">Alcohol</ion-badge>
+        <ion-badge color="light-favorite">Singing</ion-badge>
+      </ion-item>
+
+    <ion-card-content  class="content_entry" lines="none">
+      <ion-img class="content_entry_icon" src="/assets/time.svg"></ion-img>
+      <ion-label lines="none" class="content_entry_text">04/30/2019 3PM</ion-label>
+    </ion-card-content>
+
+    <ion-card-content  class="content_entry" lines="none">
+      <ion-img class="content_entry_icon" src="/assets/location.svg"></ion-img>
+      <ion-label lines="none" class="content_entry_text" >JCL 380, Jackson Ave, Queens, 11101, NY</ion-label>
+    </ion-card-content>
+
+    <ion-card-content  class="content_entry" lines="none">
+      <ion-img class="content_entry_icon" src="/assets/price.svg"></ion-img>
+      <ion-label lines="none" class="content_entry_text"> $10/person</ion-label>
+    </ion-card-content>
+
+
+</ion-content>
+
+
+<ion-footer ion-fixed>    
+  <ion-toolbar> 
+    <ion-button color="favorite" expand="block" class="login_button" (click)="join()" >Join</ion-button>
+  </ion-toolbar>    
+</ion-footer>

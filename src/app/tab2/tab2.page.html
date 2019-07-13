@@ -1,0 +1,63 @@
+
+
+<div>
+  <ion-label class="title">Post a New Event</ion-label>
+</div>
+
+<ion-content>
+
+
+    <div class="choose_img" (click)="take_photo()">
+      <ion-img class="event-img" id="camera-image" src="/assets/event_image_grey_rectangle.svg"></ion-img>
+       <span></span> 
+      <ion-img class="ellipse" src="/assets/ellipse.svg"></ion-img>
+       <span></span> 
+      <ion-img class="camera" src="/assets/camera.svg"></ion-img>
+    </div>
+
+    <ion-label class="content_entry">Event title</ion-label>
+    <ion-item class="content_entry_input">    
+      <ion-input #keyword type="text" [(ngModel)]="event_name" placeholder="Name your activity"></ion-input>
+    </ion-item>
+
+
+    <ion-label class="content_entry">Description</ion-label>  
+    <ion-textarea class="description_input" [(ngModel)]="description"></ion-textarea>
+
+    
+      <ion-label lines="none" class="content_entry">Tags/categories</ion-label>
+      <ion-input class="tag-input"  #keyword type="text" placeholder="Enter keywords/tags for your event" id="tags" (keypress)="add_tags($event.keyCode)"></ion-input>
+      <ion-item class="tag-list" id="tag-list">   
+        <ion-badge color="light-favorite">Food</ion-badge>
+        <ion-badge color="light-favorite">Board Game</ion-badge>
+        <ion-badge color="light-favorite">Nightlife</ion-badge>
+      </ion-item>
+
+      <ion-label class="content_entry">Start Time</ion-label>
+      <ion-item class="content_entry_input">    
+        <ion-datetime class="no-padding" displayFormat="MMM D YYYY H:mm" min="2019" max="2100" value="2019-05-07T11:30" id="start_date"></ion-datetime>
+      </ion-item>
+
+      <ion-label class="content_entry">End Time</ion-label>
+      <ion-item class="content_entry_input">    
+        <ion-datetime class="no-padding" displayFormat="MMM D YYYY H:mm" min="2019" max="2100" value="2019-05-07T11:30" id="end_date"></ion-datetime>
+      </ion-item>
+
+
+      <ion-label class="content_entry">Location</ion-label>
+      <ion-item class="content_entry_input">    
+        <ion-input type="text" placeholder="Enter the location of your activity" [(ngModel)]="location"></ion-input>
+      </ion-item>
+
+      <ion-label class="content_entry">Price</ion-label>
+      <ion-item class="content_entry_input">    
+        <ion-input type="number" placeholder="$ 0.00" [(ngModel)]="price"></ion-input>
+      </ion-item>
+ 
+    <!-- <ion-toolbar>  -->
+      <ion-button color="favorite" expand="block" class="login_button" (click)="post()" >Post</ion-button>
+    <!-- </ion-toolbar>     -->
+
+</ion-content>
+
+

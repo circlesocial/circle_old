@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Create your Circle Account
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+  <div class="event_item">
+    <ion-label class="event_label" position="stacked">Name</ion-label>
+    <ion-input placeholder="Firstname Lastname"></ion-input>
+  </div>
+
+  <div class="portrait">
+    <ion-label class="event_label" position="stacked">Choose Profile Picture</ion-label>
+     <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="/assets/kotori.jpg">
+        </ion-thumbnail>
+        <ion-button color="tertiary" fill="outline" slot="end">
+            Choose Image
+        </ion-button>
+    </ion-item>
+  </div>
+
+
+  <div class="event_item">
+    <ion-label class="event_label" position="stacked">Birthday</ion-label>
+    <ion-datetime class="no-padding" displayFormat="MMM D YYYY" min="1900" max="2100" value="1996-08-17"></ion-datetime>
+  </div>
+
+  <div class="event_item">
+    <ion-label class="event_label" position="stacked">Location</ion-label>
+    <ion-input placeholder="Please specify the address"></ion-input>
+  </div>
+
+  <div class="event_item">
+    <ion-label class="event_label" position="stacked">Gender</ion-label>
+    
+    <ion-select placeholder="Your gender">
+      <ion-select-option value="1">Male</ion-select-option>
+      <ion-select-option value="2">Female</ion-select-option>
+      <ion-select-option value="3">Other</ion-select-option>
+    </ion-select>
+  </div>
+  
+  <div class="event_item">
+    <ion-label class="event_label" position="stacked">University</ion-label>
+    <ion-input placeholder="University that you are currently in/graduate from."></ion-input>
+  </div>
+
+  <div class="event_item">
+    <ion-label class="event_label" position="stacked">Job</ion-label>
+    <ion-input placeholder="optional"></ion-input>
+  </div>
+
+  <div class="event_item">
+    <ion-label class="event_label" position="stacked">E-Mail Address</ion-label>
+    <ion-input placeholder="We will send a verification e-mail."></ion-input>
+  </div>
+
+  <div class="event_item" id="tag-list">
+    <ion-label class="event_label" position="stacked">Tags</ion-label>
+    <br>
+    <ion-input placeholder="Enter keywords/tags for yourself" id="tags" (keypress)="add_tags($event.keyCode)"></ion-input>
+    <ion-badge color="success">Singing</ion-badge>
+    <ion-badge color="danger">Dancing</ion-badge>
+    <ion-badge color="tertiary">Rap</ion-badge>
+    <ion-badge color="success">Basketball</ion-badge>
+  </div>
+
+  <ion-button expand="block" (click)="register()">Register now!</ion-button>
+
+  <br>
+  <br>
+
+</ion-content>

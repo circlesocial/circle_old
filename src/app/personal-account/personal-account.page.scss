@@ -1,0 +1,84 @@
+.title{
+    position: absolute;
+    width: 100%;
+    height: 22px;
+
+    margin-top: 22px;
+    font-family: 'Lato Regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.login_form_item{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    height: 37px;
+}
+
+.keywords_for_event_search {
+  padding-left: 6px !important;
+  text-align: left !important;
+}
+
+ion-item{
+    margin-left: 10px;
+    margin-right: 25px;
+    /*border-color: #D8D8D8;*/
+}
+
+.segment{
+    margin-top: 8px;
+    margin-left: 68px;
+}
+
+.friend_name{
+    /*height: 70px;*/
+    /*margin-top: -1px;*/
+    /*top: 40%;*/
+
+    font-family: "Lato Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    /*line-height: 19px;*/
+
+}
+
+
+.profile{
+    position: absolute;
+    top: 68px;
+    left: 50%;
+    margin-left: -45px;
+    margin-right: 0px;
+    
+
+    height: 90px;
+    width: 90px;
+}
+
+.profile_img{
+    border-radius: 50%;
+}
+
+ion-content {
+
+  position: absolute;
+  top: 180px;
+  left: 10px;
+
+  height: 88%;
+  
+}
+
+.icon{
+    height: auto;
+    width: 22px;
+}

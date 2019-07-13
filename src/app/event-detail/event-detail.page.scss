@@ -1,0 +1,270 @@
+   /* Settings font size
+  =========================================*/
+  $settings-font-size-header: 24px;
+  $settings-font-size-button: 12px;
+  $settings-font-size-input-field: 14px;
+  $settings-font-size-input-placeholder: 14px;
+  $settings-font-size-description: 0.75rem;
+  $settings-font-size-label: 10px;
+
+  /* Settings font weight
+  =========================================*/
+  $settings-font-weight-header: 300;
+  $settings-font-weight-input-field: 400;
+  $settings-font-weight-input-placeholder: 400;
+  $settings-font-weight-description: 400;
+  $settings-font-weight-label: 600;
+
+ /* Settings text color
+  =========================================*/
+  $settings-text-color-header: #CCCCCC;
+  $settings-text-color-button: #FFFFFF;
+  $settings-text-input-color: #242424;
+  $settings-text-input-placeholder: #CCCCCC;
+  $settings-text-color-description: #242424;
+  $settings-text-color-description-links: #687DFC;
+  $settings-text-label-color: #FF0000;
+
+ion-item{
+
+}
+
+.return{
+  display: flex;
+
+  width: 14px;
+  height: 19px;
+  margin-top: 22px;
+  margin-left: 0px;
+  position: absolute;
+  left: 25px;
+
+}
+.favor{
+ display: flex;
+
+  width: 21px;
+  height: 19px;
+  margin-top: 22px;
+  margin-left: 0px;
+  position: absolute;
+  right: 75px;
+}
+.share{
+  display: flex;
+
+  width: 20px;
+  height: 19px;
+  margin-top: 22px;
+  margin-left: 0px;
+  position: absolute;
+  right: 25px;
+}
+
+.filter_icon {
+  position: absolute;
+  width: 27px;
+  height: 19px;
+  top: 25px;
+
+  margin-left: 87%;
+}
+  
+.event-img{
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+
+ion-content {
+  position: absolute;
+  top: 60px;
+  border-radius: 0px;
+  padding-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+ion-card-title{
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  top: 15px;
+  padding-bottom: 5px;
+}
+
+
+ion-card-content{
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+ion-card-title{
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  top: 15px;
+  bottom: 0px;
+
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+.event-description{
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  /*height: 56px;*/
+  
+  top: 0px;
+  bottom: 0px;
+  bottom: 0px;
+  padding-bottom: 0px;
+}
+
+
+.content_entry {
+
+  padding-top: 7px;
+  padding-bottom: 0px;
+  left: 0px;
+  
+  display: flex;
+}
+
+.content_entry_icon {
+  width: 14px;
+  display: flex;
+
+  padding-top: 7px;
+  padding-bottom: 0px;
+
+  
+}
+
+.content_entry_text {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  /*font-weight: bold;*/
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #353535;
+  margin-left: 8px;
+  margin-right: 0px;
+  padding-top: 7px;
+  padding-bottom: 0px;
+/*  overflow: hidden !important;
+  text-overflow: ellipsis !important; 
+  display: -webkit-box !important;*/
+}
+
+.more_details{
+  position: absolute;
+  right: 0;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+
+  color: #3F3F3F;
+
+  padding-top: 7px;
+  padding-bottom: 0px;
+}
+
+
+
+
+/*.narrow_button {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+.login_button {
+  width: 325px !important;
+  height: 45px !important;
+  color: #353535 !important;
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+*/
+
+.login_button {
+  padding-left: 0px;
+  padding-right: 0px;
+
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #353535 !important;
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.input-box {
+  animation-delay: 300ms;
+}
+
+.ani-buttons {
+  animation-delay: 600ms;
+}
+
+.ani-fb-buttons {
+  animation-delay: 900ms;
+}
+
+.tag-list {
+  height: 25px;
+  width: auto;
+
+
+  font-family: 'Lato Regular';
+  font-style: normal;
+  /*font-weight: bold;*/
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #353535;
+  text-align: left;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  margin-top: 0px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-right: 0px;
+
+}

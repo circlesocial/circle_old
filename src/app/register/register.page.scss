@@ -1,0 +1,54 @@
+.event_label {
+    font-size: 1.3rem;
+}
+
+.add_event_img_btn {
+    float: left;
+}
+
+.event_item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+.portrait {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+.event_item button {
+    padding-left: 0 !important;
+}
+
+ion-item {
+    --padding-start: 0rem;
+    --placeholder-color: #e3fae6;
+}
+
+ion-datetime {
+    --padding-start: 0;
+    --placeholder-color: #e3fae6;
+}
+
+ion-input {
+    --padding-start: 0;
+}
+
+ion-textarea {
+    --padding-start: 0;
+    --border-radius: 2px;
+}
+
+ion-select {
+    --padding-start: 0;
+}
+
+ion-badge {
+    margin-right: 0.1rem;
+}

@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="back_to_previous()">
+         <ion-icon ios="ios-arrow-dropleft" md="md-arrow-dropleft" size="large" color="primary"></ion-icon>
+    </ion-buttons>
+    <ion-title>Chat Box</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+<div class="chatwindow" id="chat_window">
+
+
+
+    <ion-item slot="start" lines="none">
+      <ion-icon ios="logo-reddit" md="logo-reddit" size="large"slot="start"></ion-icon>
+      <ion-card slot="start" color="secondary">
+        <ion-card-content>
+          Let's have some food!Let's have some food!Let's have some food!Let's have some food!Let's have some food!Let's have some food!Let's have some food!Let's have some food!
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+
+    <ion-item slot="start" lines="none">
+      <ion-icon ios="logo-reddit" md="logo-reddit" size="large" slot="start"></ion-icon>
+      <ion-card slot="start" color="secondary">
+        <ion-card-content>Let's have some food!</ion-card-content>
+      </ion-card>
+    </ion-item>
+
+    <ion-item slot="end" lines="none">
+      <ion-card slot="end" color="primary">
+        <ion-card-content>Good idea.</ion-card-content>
+      </ion-card>
+      <ion-icon ios="ios-person" md="md-person" size="large" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item slot="end" lines="none">
+      <ion-card slot="end" color="primary">
+        <ion-card-content>What are we gonna do after meal?</ion-card-content>
+      </ion-card>
+      <ion-icon ios="ios-person" md="md-person" size="large" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item slot="start" lines="none">
+      <ion-icon ios="logo-snapchat" md="logo-snapchat" size="large" slot="start"></ion-icon>
+      <ion-card slot="start" color="secondary">
+        <ion-card-content>Play!</ion-card-content>
+      </ion-card>
+    </ion-item>  
+
+</div>
+</ion-content>
+
+
+<ion-footer ion-fixed>    
+  <ion-toolbar> 
+    <ion-item lines="none">       
+      <ion-input [(ngModel)]="newmessage" placeholder="Write your message ..."></ion-input>  
+      <ion-buttons slot="end" (click)="addmessage()">
+           <ion-icon ios="ios-send" md="md-send" size="large" color="primary"></ion-icon>
+      </ion-buttons>
+    </ion-item>
+  </ion-toolbar>    
+</ion-footer>

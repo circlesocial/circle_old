@@ -1,0 +1,67 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Event Center
+    </ion-title>
+   
+    <ion-icon name="hourglass" slot="end" size="large" (click)="set_filter()"></ion-icon>
+  
+  </ion-toolbar>
+</ion-header> -->
+<div input-field class="animated fadeInDown input-box" lines="none">
+  <ion-item class="login_form_item" lines="none" color="grey">
+    <ion-img class="search_icon" src="/assets/search.svg" ></ion-img>
+    <ion-input class="keywords_for_event_search" #keyword type="text" placeholder="Search for events..." color="darkGrey"></ion-input>
+  </ion-item>
+
+</div>
+<div>
+  <ion-img class="filter_icon" src="/assets/filter.svg" ></ion-img>
+</div>
+
+
+<ion-content>
+  <div *ngFor="let event of events">
+    <ion-card class="event-card">
+        <ion-img [src]="getImageSrc(event)"></ion-img>
+        <ion-card-title>{{getEventTitle(event)}}</ion-card-title>
+        <ion-card-content class="event-description">
+          <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-height: 17px; max-height: 34px; -webkit-box-orient: vertical">{{getEventDescription(event)}}</p>
+        </ion-card-content>
+
+        <ion-card-content  class="content_entry" lines="none">
+          <ion-img class="content_entry_icon" src="/assets/time.svg"></ion-img>
+          <ion-label lines="none" class="content_entry_text">{{getEventStartTime(event)}}</ion-label>
+        </ion-card-content>
+
+        <ion-card-content  class="content_entry" lines="none">
+          <ion-img class="content_entry_icon" src="/assets/location.svg"></ion-img>
+          <ion-label lines="none" class="content_entry_text" >{{getEventLocation(event)}}</ion-label>
+        </ion-card-content>
+
+        <ion-card-content  class="content_entry" lines="none">
+          <ion-img class="content_entry_icon" src="/assets/price.svg"></ion-img>
+          <ion-label lines="none" class="content_entry_text">{{getEventPrice(event)}}</ion-label>
+        </ion-card-content>
+
+        <ion-card-content  class="more_details" lines="none">
+          <ion-label lines="none" class="content_entry_text" (click)="view_detail()">More details</ion-label>
+        </ion-card-content>
+
+        <ion-card-content  class="fire_entry" lines="none">
+          <ion-img class="fire_entry_icon" src="/assets/fire.svg"></ion-img>
+          <ion-label lines="none" class="fire_entry_text"> 3 Left</ion-label>
+        </ion-card-content>
+
+
+        <ion-button color="favorite" expand="block" class="login_button" (click)="view_detail()" >Join</ion-button>
+
+    </ion-card>
+
+  </div>
+
+    
+
+
+    
+</ion-content>

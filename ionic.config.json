@@ -1,0 +1,8 @@
+{
+  "name": "Circle",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "4ddaf453"
+}

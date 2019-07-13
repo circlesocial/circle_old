@@ -1,0 +1,290 @@
+   /* Settings font size
+  =========================================*/
+  $settings-font-size-header: 24px;
+  $settings-font-size-button: 12px;
+  $settings-font-size-input-field: 14px;
+  $settings-font-size-input-placeholder: 14px;
+  $settings-font-size-description: 0.75rem;
+  $settings-font-size-label: 10px;
+
+  /* Settings font weight
+  =========================================*/
+  $settings-font-weight-header: 300;
+  $settings-font-weight-input-field: 400;
+  $settings-font-weight-input-placeholder: 400;
+  $settings-font-weight-description: 400;
+  $settings-font-weight-label: 600;
+
+ /* Settings text color
+  =========================================*/
+  $settings-text-color-header: #CCCCCC;
+  $settings-text-color-button: #FFFFFF;
+  $settings-text-input-color: #242424;
+  $settings-text-input-placeholder: #CCCCCC;
+  $settings-text-color-description: #242424;
+  $settings-text-color-description-links: #687DFC;
+  $settings-text-label-color: #FF0000;
+
+[input-field] {
+  position: absolute;
+  overflow: hidden;
+  width: 75%;
+  height: 37px;
+  top: 14px;
+  left: 25px;
+  background: #ECECEC;
+/*  margin-left: 25px;
+  margin-right: 74px;*/
+}
+
+.search_icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 10px;
+  /*left: 10px;*/
+
+
+  background: #ECECEC;
+}
+
+.keywords_for_event_search {
+/* anything declare here needs !important, 
+otherwise it will cause cause search not working in ios*/
+
+/*  height: 19px !important;
+  left: 22px !important;*/
+  top: -5px !important;
+
+  padding-left: 22px !important;
+
+/*  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+  */
+/*  padding-left: 0.1rem !important;
+  padding-right: 0.1rem !important;*/
+  
+ 
+}
+
+.filter_icon {
+  position: absolute;
+  width: 27px;
+  height: 19px;
+  top: 25px;
+
+  margin-left: 87%;
+}
+
+// ion-img {
+//   max-width: 325px !important;
+//   max-height: 159px !important;
+// }
+
+ion-input {
+  /*position: absolute;*/
+  /*text-align: left !important;*/
+
+  --placeholder-font-family: 'Lato Regular';
+  
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+}
+
+ion-content {
+  position: absolute;
+  top: 75px;
+
+  height: 88%;
+
+}
+
+ion-card {
+  margin-left: 25px;
+  margin-right: 25px;
+
+  border-radius: 5px;
+}
+
+ion-card-content{
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+ion-card-title{
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  top: 15px;
+  bottom: 0px;
+
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+.event-description{
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  /*height: 56px;*/
+  
+  top: 0px;
+  bottom: 0px;
+  bottom: 0px;
+  padding-bottom: 0px;
+}
+
+
+.content_entry {
+
+  padding-top: 7px;
+  padding-bottom: 0px;
+  left: 0px;
+  
+  display: flex;
+}
+
+.content_entry_icon {
+  width: 14px;
+  display: flex;
+
+  padding-top: 7px;
+  padding-bottom: 0px;
+
+  
+}
+
+.content_entry_text {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  /*font-weight: bold;*/
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #353535;
+  margin-left: 8px;
+  margin-right: 0px;
+  padding-top: 7px;
+  padding-bottom: 0px;
+/*  overflow: hidden !important;
+  text-overflow: ellipsis !important; 
+  display: -webkit-box !important;*/
+}
+
+.more_details{
+  position: absolute;
+  right: 0;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+
+  color: #3F3F3F;
+
+  padding-top: 7px;
+  padding-bottom: 0px;
+}
+
+.fire_entry {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  
+  background: #FFFFFF;
+  border-radius: 3px;
+  display: flex;
+}
+
+.fire_entry_icon {
+  width: 14px;
+  display: flex;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+  
+}
+
+.fire_entry_text {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #353535;
+  margin-left: 6px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+/*  overflow: hidden !important;
+  text-overflow: ellipsis !important; 
+  display: -webkit-box !important;*/
+}
+
+
+/*.narrow_button {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+.login_button {
+  width: 325px !important;
+  height: 45px !important;
+  color: #353535 !important;
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+*/
+
+.login_button {
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #353535 !important;
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.input-box {
+  animation-delay: 300ms;
+}
+
+.ani-buttons {
+  animation-delay: 600ms;
+}
+
+.ani-fb-buttons {
+  animation-delay: 900ms;
+}
